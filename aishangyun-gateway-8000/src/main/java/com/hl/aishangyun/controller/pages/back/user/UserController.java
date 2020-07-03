@@ -25,7 +25,7 @@ public class UserController {
 
     @RequestMapping("findUserById/{id}")
     ResponseDTO findUserById(@PathVariable Long id) {
-        //模仿User-rest就可以了
+        //模仿User-rest就可以了ok
         return userServiceFeign.findUserById(id);
     }
 }
