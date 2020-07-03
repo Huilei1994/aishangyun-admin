@@ -26,7 +26,8 @@ public class NacosCommonConfig {
 
     @PostConstruct
     public void initNacos() {
-        String appName = environment.getProperty("spring.application.name");// 拿到微服务的名字
+        // 拿到微服务的名字
+        String appName = environment.getProperty("spring.application.name");
 
         //String serverAddr = "81.68.69.133:8848";//开发环境用测试服务器的公网
         String serverAddr = "";//开发环境用测试服务器的公网
