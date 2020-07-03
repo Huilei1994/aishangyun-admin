@@ -31,7 +31,8 @@ public class NacosCommonConfig {
 
         //开发环境用测试服务器的公网
         //String serverAddr = "81.68.69.133:8848";
-        String serverAddr = "";//开发环境用测试服务器的公网
+        //开发环境用测试服务器的公网
+        String serverAddr = "";
 
         String[] activeProfiles = environment.getActiveProfiles();
         if (activeProfiles.length > 0) {
