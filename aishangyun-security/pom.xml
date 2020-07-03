@@ -9,18 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>aishangyun-user-rest-8001</artifactId>
+    <artifactId>aishangyun-security</artifactId>
 
     <dependencies>
-
         <dependency>
-            <groupId>com.hl.aishangyun</groupId>
-            <artifactId>aishangyun-security</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.hl.aishangyun</groupId>
-            <artifactId>aishangyun-datasouce</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
 

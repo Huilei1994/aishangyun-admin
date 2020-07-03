@@ -8,6 +8,7 @@
         <module>aishangyun-datasouce</module>
         <module>aishangyun-user-rest-8001</module>
         <module>aishangyun-gateway-8000</module>
+        <module>aishangyun-security</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -36,6 +37,11 @@
             <dependency>
                 <groupId>com.hl.aishangyun</groupId>
                 <artifactId>aishangyun-datasouce</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hl.aishangyun</groupId>
+                <artifactId>aishangyun-security</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
 
