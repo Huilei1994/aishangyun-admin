@@ -5,6 +5,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>aishangyun-common</module>
+        <module>aishangyun-datasouce</module>
+        <module>aishangyun-user-rest-8001</module>
+        <module>aishangyun-gateway-8000</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -24,7 +27,29 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- com.alibaba.cloud -->
+            <!--公共模块-->
+            <dependency>
+                <groupId>com.hl.aishangyun</groupId>
+                <artifactId>aishangyun-common</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hl.aishangyun</groupId>
+                <artifactId>aishangyun-datasouce</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+
+
+
+            <!--Spring cloud Hoxton.SR1-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Hoxton.SR6</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!--Spring cloud alibaba 2.1.0.RELEASE-->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
@@ -34,9 +59,32 @@
             </dependency>
 
             <dependency>
-                <groupId>com.alibaba.cloud</groupId>
-                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-                <version>2.2.1.RELEASE</version>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.12</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.20</version>
+            </dependency>
+            <!-- druid数据源 -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>1.1.22</version>
+            </dependency>
+            <!-- mybatis整合springboot -->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>2.1.0</version>
+            </dependency>
+            <!-- 用阿里巴巴的FastJSON -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.62</version>
             </dependency>
 
         </dependencies>
